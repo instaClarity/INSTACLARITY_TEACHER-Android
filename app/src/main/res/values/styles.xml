@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.base"/>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+    <style name="TranslucentBackground" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!--................... EDIT TEXT ............................-->
+
+    <style name="AppEditTextMediumLargeStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlActivated">@color/colorBrightBlue</item>
+        <item name="colorControlHighlight">@color/colorBrightBlue</item>
+        <item name="colorControlNormal">@color/colorBrightBlue</item>
+        <item name="colorAccent">@color/colorBrightBlue</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+
+    <style name="text_in_layout_hint_Style" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorBrightBlue</item>
+        <item name="colorControlActivated">@color/colorBrightBlue</item>
+        <item name="colorControlHighlight">@color/colorBrightBlue</item>
+        <item name="colorControlNormal">@color/colorBrightBlue</item>
+    </style>
+
+    <!--...................... TEXT VIEW .............................-->
+
+    <style name="TextViewParent" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorHintBlack</item>
+    </style>
+
+    <style name="AppSmallTextViewStyleLabel" parent="TextViewParent">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="AppMediumTextViewStyleLabel" parent="TextViewParent">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="AppBigTextViewStyleLabel" parent="TextViewParent">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+</resources>

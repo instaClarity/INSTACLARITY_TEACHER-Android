@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/activity_sign_up_iv_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:padding="@dimen/_5sdp"
+            android:contentDescription="@null" />
+
+        <com.android.instaclarity.teacher.widgets.AppTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBrightBlue"
+            app:fonts="font_source_sans_pro_bold"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textColorHint="@drawable/color_state_list_edit_text_hint"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style"
+            >
+
+            <com.android.instaclarity.teacher.widgets.AppEditText
+                android:id="@+id/activity_sign_up_et_full_name"
+                style="@style/AppEditTextMediumLargeStyle"
+                android:hint="@string/full_name"
+                android:textColor="@color/colorHintBlack"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:backgroundTint="@color/colorLightGray"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppEditTextMediumLargeStyle"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textColorHint="@drawable/color_state_list_edit_text_hint"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style">
+
+            <com.android.instaclarity.teacher.widgets.AppEditText
+                android:id="@+id/activity_sign_up_et_email_address"
+                style="@style/AppEditTextMediumLargeStyle"
+                android:hint="@string/email_address"
+                android:textColor="@color/colorHintBlack"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:backgroundTint="@color/colorLightGray"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppEditTextMediumLargeStyle"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textColorHint="@drawable/color_state_list_edit_text_hint"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style">
+
+            <com.android.instaclarity.teacher.widgets.AppEditText
+                android:id="@+id/activity_sign_up_et_contact_number"
+                style="@style/AppEditTextMediumLargeStyle"
+                android:hint="@string/contact_number"
+                android:textColor="@color/colorHintBlack"
+                android:inputType="number"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:backgroundTint="@color/colorLightGray"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppEditTextMediumLargeStyle"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textColorHint="@drawable/color_state_list_edit_text_hint"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style">
+
+            <com.android.instaclarity.teacher.widgets.AppEditText
+                android:id="@+id/activity_sign_up_et_highest_qualification"
+                style="@style/AppEditTextMediumLargeStyle"
+                android:hint="@string/highest_qualification"
+                android:textColor="@color/colorHintBlack"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:backgroundTint="@color/colorLightGray"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppEditTextMediumLargeStyle"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textColorHint="@drawable/color_state_list_edit_text_hint"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style">
+
+            <com.android.instaclarity.teacher.widgets.AppEditText
+                android:id="@+id/activity_sign_up_et_class_to_teach"
+                style="@style/AppEditTextMediumLargeStyle"
+                android:hint="@string/class_to_teach"
+                android:textColor="@color/colorHintBlack"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:backgroundTint="@color/colorLightGray"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppEditTextMediumLargeStyle"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textColorHint="@drawable/color_state_list_edit_text_hint"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style">
+
+            <com.android.instaclarity.teacher.widgets.AppEditText
+                android:id="@+id/activity_sign_up_et_years_of_experience"
+                style="@style/AppEditTextMediumLargeStyle"
+                android:hint="@string/years_of_experience"
+                android:textColor="@color/colorHintBlack"
+                android:inputType="number"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:backgroundTint="@color/colorLightGray"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppEditTextMediumLargeStyle"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textColorHint="@drawable/color_state_list_edit_text_hint"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style">
+
+            <com.android.instaclarity.teacher.widgets.AppEditText
+                android:id="@+id/activity_sign_up_et_specialization"
+                style="@style/AppEditTextMediumLargeStyle"
+                android:hint="@string/specialization"
+                android:textColor="@color/colorHintBlack"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:backgroundTint="@color/colorLightGray"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppEditTextMediumLargeStyle"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textColorHint="@drawable/color_state_list_edit_text_hint"
+            app:hintTextAppearance="@style/text_in_layout_hint_Style">
+
+            <com.android.instaclarity.teacher.widgets.AppEditText
+                android:id="@+id/activity_sign_up_et_your_location"
+                style="@style/AppEditTextMediumLargeStyle"
+                android:hint="@string/your_location"
+                android:textColor="@color/colorHintBlack"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:backgroundTint="@color/colorLightGray"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppEditTextMediumLargeStyle"
+                android:textColorHint="@drawable/color_state_list_edit_text_hint"
+                app:hintTextAppearance="@style/text_in_layout_hint_Style">
+
+                <com.android.instaclarity.teacher.widgets.AppEditText
+                    android:id="@+id/activity_sign_up_et_password"
+                    style="@style/AppEditTextMediumLargeStyle"
+                    android:hint="@string/password"
+                    android:textColor="@color/colorHintBlack"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_35sdp"
+                    android:backgroundTint="@color/colorLightGray"
+                    app:fonts="font_source_sans_pro_regular"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.android.instaclarity.teacher.widgets.AppTextView
+                style="@style/AppMediumTextViewStyleLabel"
+                android:text="@string/show"
+                android:textColor="@color/colorBrightBlue"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:padding="@dimen/_3sdp"/>
+
+        </FrameLayout>
+
+        <com.android.instaclarity.teacher.widgets.AppTextView
+            android:id="@+id/activity_sign_up_btn_sign_up"
+            style="@style/AppMediumTextViewStyleLabel"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_21sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/bg_round_sign_in_btn_bright_blue"
+            android:text="@string/sign_up"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@android:color/white"
+            app:fonts="font_source_sans_pro_bold"
+            android:padding="@dimen/_14sdp"
+            android:gravity="center"
+            android:elevation="@dimen/_2sdp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

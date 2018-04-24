@@ -1,0 +1,177 @@
+# this is the INSTACLARITY TEACHER APIS
+swagger: '2.0'
+info:
+  title: INSTACLARITY TEACHER APIS
+  description: INSTACLARITY TEACHER APIS
+  version: "1.0.0"
+# the domain of the service
+host: BuildConfig.SERVER_URL
+# array of all schemes that your API supports
+schemes:
+  - http
+# will be prefixed to all paths
+basePath: /35.154.155.14:9000/
+produces:
+  - application/json
+#################################################################################################################
+#                            Services                                                                             #
+#################################################################################################################
+paths:
+
+  /o/token/:
+    post:
+      summary: Oauth Token of User
+      description: The Oauth Token endpoint returns oauth token of user.
+      consumes:
+        - application/x-www-form-urlencoded
+      produces:
+        - application/x-www-form-urlencoded
+      operationId: getToken
+      x-return-name: Oauth
+      parameters:
+        - name: client_id
+          in: formData
+          description: client Id
+          required: true
+          type: string
+        - name: client_secret
+          in: formData
+          description: client secret
+          required: true
+          type: string
+        - name: username
+          in: formData
+          description: Username
+          required: true
+          type: string
+        - name: password
+          in: formData
+          description: password
+          required: true
+          type: string
+        - name: grant_type
+          in: formData
+          description: grant Type
+          required: true
+          type: string
+      tags:
+        - Token
+      responses:
+        '200':
+          description: get token in Json format and return status and message.
+          schema:
+            $ref: '#/definitions/Token'
+            
+  /api/teacher/signup/:
+    post:
+      summary: Sign up
+      description: Sign up
+      operationId: signUp
+      x-return-name: user
+      x-parameter-encoding: JSON
+      parameters:
+        - name: Authorization
+          in: header
+          description: Bearer public token.
+          required: true
+          type: string
+        - schema:
+            $ref: '#/definitions/User'
+          name: user
+          in: body
+      tags:
+        - User
+      responses:
+        '200':
+          description: User data
+          schema:
+            $ref: '#/definitions/User'
+            
+  /api/teacher/login/:
+    post:
+      summary: Login API
+      description: Login API
+      operationId: login
+      x-return-name: user
+      x-parameter-encoding: JSON
+      parameters:
+        - name: Authorization
+          in: header
+          description: Bearer public token.
+          required: true
+          type: string
+        - schema:
+            $ref: '#/definitions/User'
+          name: user
+          in: body
+      tags:
+        - User
+      responses:
+        '200':
+          description: User data
+          schema:
+            $ref: '#/definitions/User'
+  
+
+####################################################################################
+#                                   MODEL
+####################################################################################
+definitions:
+  
+  Token:
+    type: object
+    properties:
+      access_token:
+        type: string
+        description: Authorization.
+      expires_in:
+        type: string
+        description: Auth token expiry time.
+      refresh_token:
+        type: string
+        description: Refresh Token.
+      scope:
+        type: string
+        description: Scope of Authorization.
+      token_type:
+        type: string
+        description: Type of Token.  
+
+  User:
+    type: object
+    properties:
+      email:
+        type: string
+        description: Email of the user.
+      password:
+        type: string
+        description: Password of the user.
+      full_name:
+        type: string
+        description: Full name of the user
+      mobile_number:
+        type: string
+        description: MobileNum of the user.
+      study_class:
+        type: integer
+        description: Study Class of User .
+      subject:
+        type: integer
+        description: Study Class of User .
+      token:
+        $ref: '#/definitions/Token'
+      teacher: 
+        $ref: '#/definitions/Teacher'
+        
+  Teacher:
+    type: object
+    properties:
+      specialization:
+        type: string
+        description: specialization of teacher
+      location:
+        type: string
+        description: location of teacher
+      experience:
+        type: integer
+        description: experience of teaching in years

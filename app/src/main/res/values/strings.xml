@@ -1,0 +1,32 @@
+<resources>
+    <!---.................  APP NAME .............-->
+    <string name="app_name">My Application T</string>
+
+
+    <!---.................  LOGIN SCREEN.............-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="or">or</string>
+    <string name="show">Show</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_address">Email Address</string>
+    <string name="full_name">Full name</string>
+    <string name="connect_with_google">Connect with Google</string>
+    <string name="connect_with_facebook">Connect with Facebook</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="highest_qualification">Highest Qualification</string>
+    <string name="class_to_teach">Class to Teach</string>
+    <string name="years_of_experience">Years of Experience</string>
+    <string name="specialization">Specialization</string>
+    <string name="your_location">Your Location</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="check_your_internet_connection">Check your internet connection.</string>
+    <string name="empty_email_error">Please enter email</string>
+    <string name="email_format_error">Please enter a valid email address</string>
+    <string name="empty_password_error">Please enter password</string>
+    <string name="password_error">Invalid password</string>
+
+</resources>

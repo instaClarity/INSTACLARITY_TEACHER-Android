@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0076FF</color>
+    <color name="colorPrimaryDark">#0066ff</color>
+    <color name="colorAccent">#0076FF</color>
+
+    <color name="colorBrightBlue">#0076FF</color>
+    <color name="colorHintBlack">#414141</color>
+    <color name="colorLightGray">#DADADA</color>
+    <color name="colorFacebookBlue">#435896</color>
+    <color name="colorGoogleRed">#ED3E37</color>
+    <color name="colorGrey">#9b9b9b</color>
+
+</resources>

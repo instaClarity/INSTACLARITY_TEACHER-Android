@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TypeFaceFonts">
+        <attr name="fonts" format="string">
+            <flag name="font_source_sans_pro_bold" value="1"/>
+            <flag name="font_source_sans_pro_regular" value="2"/>
+            <flag name="font_open_sans_regular" value="3"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/progress_indicator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <com.android.instaclarity.teacher.widgets.progress.ProgressWheel
+        android:id="@android:id/progress"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        app:matProg_barColor="@color/colorGrey"
+        app:matProg_barWidth="4sp"
+        app:matProg_circleRadius="32dp"
+        app:matProg_fillRadius="false"/>
+</RelativeLayout>
